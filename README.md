@@ -1,23 +1,38 @@
-# Packages: 
+# Welcome to MyQuizApp!
 
-1) "fmt"
-2)   "github.com/gin-contrib/cors" 
-3)   "github.com/gin-gonic/gin"
-4)   "github.com/jinzhu/gorm"
-5)   "github.com/jinzhu/gorm/dialects/sqlite"
+# Introduction to the project:
+I have to written a Go server that implements REST API and interacts with the database at the backend. The front end is a React application that is an interactive quiz.
 
-# How to Run
+Owner: Sanchit Saini
 
-1)Inside the assignment_20171191/go/src folder run 
-     go run 5\ -\ CRUD\ API.go 
-2)Inside the assignment_20171191/react-app run
-     yarn start
-     
-# Functionality
+## Features:
+- Registration and login for users
+- Multiple genre of quizzes - Friends, Cricket, General Knowledge, Maths
+- Multiple types of questions,MCQ, Single Correct.
+- Leaderboard
+- Lifeline
+- Attempted quiz history
+- Admin privileges to one user. He has privilege to do the following:
+    - View/Create/Delete quizzes
+    - Create/Delete/Edit questions/options in each quiz
+    - View all users
+    - Delete users
 
-1)The app provides features of login and signup.
-2)It has a admin user who can create,edit or delete quizzes and also manage the users.
-3)The app has 2 genres : movies and sports and quizzes on them.
-4)The score is displayed after submitting the quiz and entry in leaderboard is made.
-5)The user can view his complete perfomance by viewing the previous quizzes attempted.
-6) There is also functionality of lifeline which displays the answer of first question of quiz.
+## Running the program:
+- Running the react app:
+	- Go to the "react-app" folder and run yarn start
+    - `yarn start`
+- Running the Go server:
+    - Go to the go/src folder and run `go run` command
+	- `go run API.go`
+The app will start on your default browser.
+
+## Go packages used:
+- "fmt"
+- "strconv"
+- "golang.org/x/crypto/bcrypt"
+- "github.com/gin-contrib/cors"
+- "github.com/gin-gonic/gin"
+- "github.com/jinzhu/gorm"
+- _ "github.com/jinzhu/gorm/dialects/sqlite"
+- _ "github.com/mattn/go-sqlite3"
